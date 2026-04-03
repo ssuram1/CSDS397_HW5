@@ -1,0 +1,3 @@
+INSERT IGNORE INTO airflow_source_tables.departments (department_name)
+SELECT DISTINCT department
+FROM staging_cleaned.employee_data_clean;
